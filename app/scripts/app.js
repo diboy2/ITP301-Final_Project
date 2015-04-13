@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var App =angular
   .module('itp301FinalProjectApp', [
     'ngAnimate',
     'ngCookies',
@@ -18,3 +18,14 @@ angular
     'ngTouch',
     'ui.bootstrap'
   ]);
+
+
+App.controller('ArtistListCtrl', function ($scope) {
+  $scope.artists = [
+    {'name': 'Justin Timberlake',
+    'url':'images/justin_timberlake_icon.jpg'},
+    {'name': 'Taylor Swift',
+	'url':'images/taylor_swift_icon.jpg'}
+  ];
+
+});

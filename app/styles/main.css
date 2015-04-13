@@ -81,3 +81,19 @@ body {
     border-bottom: 0;
   }
 }
+
+/* Artists Selection */
+
+.artist-icon{
+    width: 53px;
+    height: 53px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.artist-name-column{
+  line-height: 65px;
+}

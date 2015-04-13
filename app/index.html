@@ -18,15 +18,34 @@
 
   <!-- Add your site or application content here -->
 
-  <div class="container" >
+  <div class="container" ng-controller="ArtistListCtrl">
 
-    <accordion>
-      <accordion-group heading="Whatever">
+    <accordion ng-repeat="artist in artists"  >
+      <accordion-group >
+
+      <accordion-heading>
+      <div class='row'>
+        <div class="col-md-6 artist-name-column">
+          <h4 class="vcenter">{{artist.name}}</h4>
+        </div>
+        <div class="col-md-6">
+
+            <img  class="img-circle artist-icon pull-right"
+            src="{{artist.url}}"
+            alt="User Pic">
+
+        </div>
+      </div>
+    </accordion-heading>
+  </accordion-group>
+     <!-- <accordion-group heading="Whatever">
         Hahahahaha
       </accordion-group>
       <accordion-group heading="Testing">
         Hahahahaha
-      </accordion-group>
+      </accordion-group> -->
+
+
     </accordion>
 
 
@@ -68,6 +87,7 @@
 
  <!-- build:js({.tmp,app}) scripts/scripts.js -->
  <script src="scripts/app.js"></script>
+ <script src="scripts/controllers/controllers.js"></script>
  <!-- endbuild -->
 </body>
 </html>
