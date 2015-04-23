@@ -1,33 +1,27 @@
 <!doctype html>
 <html>
 <head>
-  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="main.css">
   <title>Search</title>
 </head>
 <body>
   <div class="container-fluid">
     <div id="buttons">
-      <label> <input id="query" value='cats' type="text"/><button id="search-button" disabled onclick="search()">Search</button></label>
+      <label> <input id="query" placeholder="Search Anything Taylor Swift" type="text"/><button id="search-button" disabled onclick="search('')">Search</button></label>
     </div>
+    <ul class="pager">
+      <li class="previous"><button onclick="getPreviousPage()"><span aria-hidden="true">&larr;</span> Older</button></li>
+      <li class="next"><button onclick="getNextPage()" >Newer <span aria-hidden="true">&rarr;</span></button></li>
+    </ul>
     <div class="video-thumbnails">
-      <div class="row video-thumbnails-row">
-        <div class="col-lg-4 video-thumbnail">
-          <div class="col-md-4 video-thumbnail-image-wrapper">
-            <img src="//i.ytimg.com/vi_webp/8f2reO_PBLU/mqdefault.webp" class="img-responsive video-thumbnail-image">
-          </div>
-          <div class="col-md-8 video-thumbnail-caption">
-            <h4 class="video-thumbnail-title">Title</h4>
-            <p class="video-thubmnail-description">"Description Blah blah balh blah"</p>
-          </div>
-        </div>      
-      </div>
     </div>
+    <nav>
+    
+    </nav>
   </div>
-  <script src="../../bower_components/jquery/dist/jquery.js"></script>
-  <script src="../../bower_components/angular/angular.js"></script>
-  <script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="../../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="jquery-2.1.3.min.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
   <script src="auth.js"></script>
   <script src="search.js"></script>
   <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady">
