@@ -1,0 +1,51 @@
+1. Topic
+
+	It's a fan page for taylor swift. It's intended to inform more people about taylor swift and get connected with the latest pics and videos about taylor swift. 
+
+2. Customizations 
+
+	It will have a circular menu at the bottom. Each page will use bootstrap customizations and maybe fontawesome icons for buttons. 
+
+3. Design UI/UX, Content
+	1. It will have 4 pages. The first page is the home page. It will be taylor swift's profile and 
+	maybe links to her official social media pages. The 2nd page will list all her albums with a listing of tracks and awards that she's received. The 3rd page will be a listing of all her 
+	videos and will allow you to search any videos related to her through youtube's data API. 
+	The 4th page will be an image gallery and you will be able to search images by keyword.
+
+	2. There are user inputs. These come from search words for the videos and images page. I don't think there needs to be validation. 
+
+
+4.  JSON API 
+	1. The JSON api is the youtube data api. I will be using the youtube's search.list items 
+	to query video information. Then I will receive the video id, the thumbnail image reference, 
+	the description, and title of the video. I will use the nextpage or prevpage token, to get 
+	the next page of videos for the associated search term. 
+
+	2. The custom parameter is the search term for the video which is passed into the 
+	"q" parameter of the youtube request function. I can also maybe customize how many
+	videos show per screen. 
+
+	3. The api is relevant because it helps search for any youtube videos directly related to taylor swift and then watch them!!
+
+5. JS/jQuery Plugin 
+	I will be using a circular menu plugin to navigate through the pages. 
+	I've always wanted to try out circular menus because they sould interesting to use. 
+	The circular menu will make site look cooler. Also, I will be using angularjs to organize code and implement
+	the MVC. 
+
+6.
+
+ The images and videos  will update based on the search term. The albums will also have 
+ a bunch of accordions for the track listings. 
+
+7. 
+	I will be using JS Objects. The JS Objects will be album objects, and youtube video objects. 
+	I will have an array of javascript objects when we query the videos. Also, we will call an array 
+	of album objects and display them on the screen. We will also ahve an array of image objects for the 
+	image gallery on the page. 
+
+	I will be also using regexp. The regexp will be used to search for images. It's possible
+	that we might have a database and I will be using regexp to do a php request of cells that 
+	fit the "REGEXP searchterm".
+
+	I will also being using angularjs which will add further difficulty to the project.   
